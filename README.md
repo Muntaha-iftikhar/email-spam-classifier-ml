@@ -1,85 +1,42 @@
-Email Spam Classifier Using Machine Learning
+📘 Email Spam Classifier – ML Internship Task Submission
 
-Author: Shahzaib Asif
-Track: Machine Learning Internship (Arch Technologies)
-Submission Date: Before 27th of month
+Author: Muntaha Iftikhar
+Track: Machine Learning
+Project: Email Spam Classifier (TF-IDF + SVM)
 
-Project Overview
+✔ Project Overview
 
-This project is a Machine Learning–based Email Spam Classifier that predicts whether an email is Spam or Not Spam using:
+This Machine Learning project classifies emails as Spam or Not Spam using Natural Language Processing (NLP) techniques.
+The Streamlit app allows users to paste an email and instantly get predictions.
 
-TF-IDF Vectorization
-
-Support Vector Machine (SVM) Classifier
-
-Custom Text Preprocessing
-
-Interactive Streamlit Web App
-
-The frontend Streamlit app allows users to paste any email text and receive instant predictions.
-
-Files Included
-File	Description
-spam.ipynb	Training notebook (data cleaning → training → evaluation → model saving)
-app.py	Streamlit frontend (loads model + vectorizer and predicts spam/ham)
-svm_spam_model.pkl	Trained SVM model
-tfidf_vectorizer.pkl	TF-IDF vectorizer used during training
-dataset.csv	Spam/Ham dataset (if included)
-README.md	Project documentation
-requirements.txt	List of required Python libraries
-How It Works
-
-User enters/pastes an email in the Streamlit UI
-
-Text is cleaned (lowercase, remove URLs, punctuation, stopwords, stemming)
-
-Cleaned text is converted to TF-IDF vector
-
-Vector is passed to the trained SVM model
-
-Output:
-
-Spam (1)
-
-Not Spam (0)
-
-Model Performance
-
-The SVM classifier gives:
-
-High Accuracy
-
-High Precision
-
-High Recall
-
-Excellent performance on unseen emails
-
-(Exact scores are shown inside spam.ipynb.)
-
-How to Run the App
-1. Install Requirements
+✔ Files Included
+File	Purpose
+spam.ipynb	Training notebook
+app.py	Streamlit app
+svm_spam_model.pkl	Saved SVM model
+tfidf_vectorizer.pkl	TF-IDF Vectorizer
+dataset.csv	Dataset (if included)
+requirements.txt	Required libraries
+README.md	Documentation
+✔ How to Run
+Install dependencies
 pip install -r requirements.txt
 
-2. Run Streamlit App
+Run app
 streamlit run app.py
 
-Libraries Used
+✔ Model Summary
 
-scikit-learn
+Preprocessing: tokenization, stopword removal, stemming
 
-pandas
+Features: TF-IDF
 
-numpy
+Algorithm: SVM
 
-nltk
+High accuracy and strong classification ability
 
-streamlit
+✔ Author
 
-matplotlib, seaborn (for EDA)
-
-Author
-
-Shahzaib Asif
+Muntaha Iftikhar
 BSIT – 7th Semester
-Machine Learning Enthusiast
+AI & ML Enthusiasts
